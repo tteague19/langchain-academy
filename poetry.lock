@@ -714,6 +714,24 @@ files = [
 ]
 
 [[package]]
+name = "dydantic"
+version = "0.0.7"
+description = "Dynamically generate pydantic models from JSON schema."
+category = "main"
+optional = false
+python-versions = "<4.0,>=3.9"
+files = [
+    {file = "dydantic-0.0.7-py3-none-any.whl", hash = "sha256:5531220d876b77451bb045155f83534c69d13bf76d4d628dcaa920d933a7ae89"},
+    {file = "dydantic-0.0.7.tar.gz", hash = "sha256:6430f038fd32b72782722ef1ddf39837ba251fbf7a183ced3e1597fac4e4862e"},
+]
+
+[package.dependencies]
+pydantic = ">=2,<3"
+
+[package.extras]
+email = ["email-validator (>=2.1,<3.0)"]
+
+[[package]]
 name = "executing"
 version = "2.1.0"
 description = "Get the currently executing AST node of a frame, and other information"
@@ -3692,6 +3710,23 @@ docs = ["myst-parser", "pydata-sphinx-theme", "sphinx"]
 test = ["argcomplete (>=3.0.3)", "mypy (>=1.7.0)", "pre-commit", "pytest (>=7.0,<8.2)", "pytest-mock", "pytest-mypy-testing"]
 
 [[package]]
+name = "trustcall"
+version = "0.0.26"
+description = "Tenacious & trustworthy tool calling built on LangGraph."
+category = "main"
+optional = false
+python-versions = "<4.0,>=3.9"
+files = [
+    {file = "trustcall-0.0.26-py3-none-any.whl", hash = "sha256:e36690cd006c063c0f0f0356fba77bf562e2099c2bb7ede3e342b2d0530233c5"},
+    {file = "trustcall-0.0.26.tar.gz", hash = "sha256:3b7eb128c2ab616e9914f544ed8f6a26de735b34ef4bf06e21821d000e047aee"},
+]
+
+[package.dependencies]
+dydantic = ">=0.0.7,<0.0.8"
+jsonpatch = ">=1.33,<2.0"
+langgraph = ">=0.2.25"
+
+[[package]]
 name = "types-python-dateutil"
 version = "2.9.0.20241003"
 description = "Typing stubs for python-dateutil"
@@ -3936,4 +3971,4 @@ propcache = ">=0.2.0"
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.11"
-content-hash = "147bcce79188e6e564697103d57682087beb5b7989d35a6a9fee341d4e81c528"
+content-hash = "8a2f297017bc02bb0e053371ec3921ed8ed88aa6667c93766ee6d9f1acf13357"
